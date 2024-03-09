@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <title>Social Media</title>
+</head>
+<body>
+    <div class="menu">
+        <li style="--i:1;--clr:#ff0000;">
+            <a href="#">
+                <!-- <ion-icon name="logo-youtube"></ion-icon> -->
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:2;--clr:#1877f2;">
+            <a href="#">
+                <!-- <ion-icon name="logo-facebook"></ion-icon> -->
+                <ion-icon name="calendar-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:3;--clr:#ea4c89;">
+            <a href="#">
+                <!-- <ion-icon name="logo-dribbble"></ion-icon> -->
+                <ion-icon name="git-network-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:4;--clr:#25d366;">
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </li>
+        <div class="toggle">
+            <ion-icon name="share-social"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <script>
+        let menu  = document.querySelector('.menu');
+        let toggle  = document.querySelector('.toggle');
+
+        toggle.onclick = function() {     
+            menu.classList.toggle('active');
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

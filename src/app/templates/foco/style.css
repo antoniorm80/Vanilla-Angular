@@ -1,0 +1,15 @@
+/* https://www.youtube.com/watch?v=cMRGyYLWbKc */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    /* background: #25252b;  */
+    background: url('bulb_off.jpg');
+    background-size:cover;
+ 
+}

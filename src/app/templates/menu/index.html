@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Indicador</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Logo</a>
+        <nav>
+            <div id="indicador"></div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Porfolio</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+  
+    <script>
+        let indicador  = document.querySelector('#indicador');
+        let items = document.querySelectorAll('nav a');
+
+        function marker(e) {
+            indicador.style.left = e.offsetLeft+"px";
+            indicador.style.width = e.offsetWidth+"px";
+        }
+
+        items.forEach(link => {
+            link.addEventListener('click', (e) => {
+                marker(e.target);
+            })
+        })
+
+    </script>
+</body>
+</html>
